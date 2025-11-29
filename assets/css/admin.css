@@ -1,0 +1,110 @@
+/* Additional styles for order dropdown */
+
+#order_id {
+  width: 100%;
+  max-width: 600px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #fff;
+}
+
+#order_id option {
+  padding: 8px;
+  font-size: 14px;
+}
+
+#order_id:focus {
+  border-color: #0073aa;
+  box-shadow: 0 0 0 1px #0073aa;
+  outline: none;
+}
+
+/* Order details styling improvements */
+#order-details {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  border-left: 4px solid #0073aa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#order-details strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Loading state for dropdown */
+.order-loading {
+  color: #666;
+  font-style: italic;
+}
+
+/* Better form styling */
+.form-table td {
+  vertical-align: top;
+}
+
+.form-table th {
+  padding-top: 15px;
+}
+
+/* Responsive dropdown */
+@media (max-width: 782px) {
+  #order_id {
+    width: 100%;
+    font-size: 16px; /* Prevent zoom on mobile */
+  }
+
+  .form-table th,
+  .form-table td {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .form-table th {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+}
+
+/* Success/Error message improvements */
+.wc-invoice-manager-admin .notice {
+  margin: 20px 0;
+  padding: 12px 16px;
+  border-left: 4px solid;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wc-invoice-manager-admin .notice p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Button improvements */
+.button-primary {
+  background: #0073aa;
+  border-color: #0073aa;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  background: #005a87;
+  border-color: #005a87;
+  color: #fff;
+}
+
+.button-primary:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}

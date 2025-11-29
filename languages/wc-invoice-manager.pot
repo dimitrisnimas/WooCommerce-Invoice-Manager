@@ -1,0 +1,319 @@
+# Copyright (C) 2024 WooCommerce Invoice Manager
+# This file is distributed under the same license as the WooCommerce Invoice Manager package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Invoice Manager 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-invoice-manager\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: woocommerce-invoice-manager.php:24
+msgid "WooCommerce Invoice Manager requires WooCommerce to be installed and active."
+msgstr ""
+
+#: woocommerce-invoice-manager.php:55
+msgid "Παραστατικά"
+msgstr ""
+
+#: includes/class-admin.php:25
+msgid "Ανέβασμα Παραστατικού"
+msgstr ""
+
+#: includes/class-admin.php:32
+msgid "Αριθμός Παραγγελίας"
+msgstr ""
+
+#: includes/class-admin.php:36
+msgid "Αναζήτηση"
+msgstr ""
+
+#: includes/class-admin.php:41
+msgid "Στοιχεία Παραγγελίας"
+msgstr ""
+
+#: includes/class-admin.php:48
+msgid "Αρχείο PDF"
+msgstr ""
+
+#: includes/class-admin.php:51
+msgid "Επιλέξτε αρχείο PDF για το παραστατικό"
+msgstr ""
+
+#: includes/class-admin.php:57
+msgid "Ανέβασμα Παραστατικού"
+msgstr ""
+
+#: includes/class-admin.php:64
+msgid "Λίστα Παραστατικών"
+msgstr ""
+
+#: includes/class-admin.php:82
+msgid "Δεν έχετε άδεια για αυτή την ενέργεια"
+msgstr ""
+
+#: includes/class-admin.php:89
+msgid "Η παραγγελία δεν βρέθηκε"
+msgstr ""
+
+#: includes/class-admin.php:98
+msgid "Δεν επιλέχθηκε αρχείο"
+msgstr ""
+
+#: includes/class-admin.php:112
+msgid "Δεν έχετε άδεια για αυτή την ενέργεια"
+msgstr ""
+
+#: includes/class-admin.php:129
+msgid "Η παραγγελία δεν βρέθηκε"
+msgstr ""
+
+#: includes/class-admin.php:133
+msgid "Πελάτης"
+msgstr ""
+
+#: includes/class-admin.php:137
+msgid "Email"
+msgstr ""
+
+#: includes/class-admin.php:141
+msgid "Σύνολο"
+msgstr ""
+
+#: includes/class-admin.php:145
+msgid "Κατάσταση"
+msgstr ""
+
+#: includes/class-admin.php:157
+msgid "Δεν υπάρχουν παραστατικά"
+msgstr ""
+
+#: includes/class-admin.php:164
+msgid "ID"
+msgstr ""
+
+#: includes/class-admin.php:165
+msgid "Παραγγελία"
+msgstr ""
+
+#: includes/class-admin.php:166
+msgid "Πελάτης"
+msgstr ""
+
+#: includes/class-admin.php:167
+msgid "Αρχείο"
+msgstr ""
+
+#: includes/class-admin.php:168
+msgid "Ημερομηνία"
+msgstr ""
+
+#: includes/class-admin.php:169
+msgid "Κατάσταση"
+msgstr ""
+
+#: includes/class-admin.php:170
+msgid "Ενέργειες"
+msgstr ""
+
+#: includes/class-admin.php:192
+msgid "Αποστολή"
+msgstr ""
+
+#: includes/class-admin.php:206
+msgid "Εκκρεμές"
+msgstr ""
+
+#: includes/class-admin.php:208
+msgid "Απεστάλη"
+msgstr ""
+
+#: includes/class-frontend.php:24
+msgid "Παραστατικά"
+msgstr ""
+
+#: includes/class-frontend.php:43
+msgid "Τα Παραστατικά Μου"
+msgstr ""
+
+#: includes/class-frontend.php:46
+msgid "Δεν έχετε παραστατικά ακόμα."
+msgstr ""
+
+#: includes/class-frontend.php:53
+msgid "Παραγγελία"
+msgstr ""
+
+#: includes/class-frontend.php:58
+msgid "Ημερομηνία Παραγγελίας"
+msgstr ""
+
+#: includes/class-frontend.php:63
+msgid "Ημερομηνία Παραστατικού"
+msgstr ""
+
+#: includes/class-frontend.php:68
+msgid "Κατάσταση"
+msgstr ""
+
+#: includes/class-frontend.php:73
+msgid "Ενέργειες"
+msgstr ""
+
+#: includes/class-frontend.php:104
+msgid "Λήψη"
+msgstr ""
+
+#: includes/class-frontend.php:116
+msgid "Μη έγκυρη αίτηση"
+msgstr ""
+
+#: includes/class-frontend.php:125
+msgid "Το παραστατικό δεν βρέθηκε"
+msgstr ""
+
+#: includes/class-frontend.php:129
+msgid "Πρέπει να είστε συνδεδεμένοι για να κατεβάσετε το παραστατικό"
+msgstr ""
+
+#: includes/class-frontend.php:133
+msgid "Δεν έχετε άδεια να κατεβάσετε αυτό το παραστατικό"
+msgstr ""
+
+#: includes/class-frontend.php:137
+msgid "Το αρχείο δεν βρέθηκε στον διακομιστή"
+msgstr ""
+
+#: includes/class-file-manager.php:24
+msgid "Δεν βρέθηκε email πελάτη για την παραγγελία"
+msgstr ""
+
+#: includes/class-file-manager.php:30
+msgid "Δεν ήταν δυνατή η δημιουργία φακέλου πελάτη"
+msgstr ""
+
+#: includes/class-file-manager.php:42
+msgid "Δεν ήταν δυνατή η αποθήκευση του αρχείου"
+msgstr ""
+
+#: includes/class-file-manager.php:51
+msgid "Δεν ήταν δυνατή η αποθήκευση των στοιχείων στη βάση δεδομένων"
+msgstr ""
+
+#: includes/class-file-manager.php:56
+msgid "Το παραστατικό ανέβηκε επιτυχώς"
+msgstr ""
+
+#: includes/class-file-manager.php:61
+msgid "Σφάλμα κατά το ανέβασμα: "
+msgstr ""
+
+#: includes/class-file-manager.php:71
+msgid "Σφάλμα κατά το ανέβασμα του αρχείου"
+msgstr ""
+
+#: includes/class-file-manager.php:79
+msgid "Το αρχείο είναι πολύ μεγάλο. Μέγιστο μέγεθος: 10MB"
+msgstr ""
+
+#: includes/class-file-manager.php:88
+msgid "Μόνο αρχεία PDF επιτρέπονται"
+msgstr ""
+
+#: includes/class-file-manager.php:96
+msgid "Το αρχείο πρέπει να έχει επέκταση .pdf"
+msgstr ""
+
+#: includes/class-email-manager.php:29
+msgid "Το παραστατικό δεν βρέθηκε"
+msgstr ""
+
+#: includes/class-email-manager.php:37
+msgid "Το παραστατικό έχει ήδη αποσταλεί"
+msgstr ""
+
+#: includes/class-email-manager.php:45
+msgid "Η παραγγελία δεν βρέθηκε"
+msgstr ""
+
+#: includes/class-email-manager.php:53
+msgid "Το αρχείο παραστατικού δεν βρέθηκε"
+msgstr ""
+
+#: includes/class-email-manager.php:71
+msgid "Το παραστατικό στάλθηκε επιτυχώς"
+msgstr ""
+
+#: includes/class-email-manager.php:78
+msgid "Δεν ήταν δυνατή η αποστολή του email"
+msgstr ""
+
+#: includes/class-email-manager.php:84
+msgid "Σφάλμα κατά την αποστολή: "
+msgstr ""
+
+#: includes/class-email-manager.php:95
+msgid "Παραστατικό για την παραγγελία #%s - %s"
+msgstr ""
+
+#: includes/class-email-manager.php:145
+msgid "Παραστατικό Παραγγελίας"
+msgstr ""
+
+#: includes/class-email-manager.php:149
+msgid "Αγαπητέ/ή %s,"
+msgstr ""
+
+#: includes/class-email-manager.php:151
+msgid "Σας στέλνουμε το παραστατικό για την παραγγελία σας."
+msgstr ""
+
+#: includes/class-email-manager.php:154
+msgid "Στοιχεία Παραγγελίας"
+msgstr ""
+
+#: includes/class-email-manager.php:156
+msgid "Αριθμός Παραγγελίας:"
+msgstr ""
+
+#: includes/class-email-manager.php:158
+msgid "Ημερομηνία:"
+msgstr ""
+
+#: includes/class-email-manager.php:160
+msgid "Σύνολο:"
+msgstr ""
+
+#: includes/class-email-manager.php:163
+msgid "Το παραστατικό είναι επισυνάπτεται σε αυτό το email σε μορφή PDF."
+msgstr ""
+
+#: includes/class-email-manager.php:165
+msgid "Εάν έχετε οποιεσδήποτε ερωτήσεις, μη διστάσετε να επικοινωνήσετε μαζί μας."
+msgstr ""
+
+#: includes/class-email-manager.php:167
+msgid "Ευχαριστούμε που μας επιλέξατε!"
+msgstr ""
+
+#: includes/class-email-manager.php:169
+msgid "Με εκτίμηση,"
+msgstr ""
+
+#: includes/class-email-manager.php:176
+msgid "Όλα τα δικαιώματα διατηρούνται."
+msgstr ""
+
+#: includes/class-email-manager.php:189
+msgid "Δοκιμαστικό Email - Παραστατικό"
+msgstr ""
+
+#: includes/class-email-manager.php:191
+msgid "Αυτό είναι ένα δοκιμαστικό email από το plugin WooCommerce Invoice Manager.<br><br>Εάν λαμβάνετε αυτό το μήνυμα, η λειτουργία email λειτουργεί σωστά.<br><br>Ημερομηνία: %s"
+msgstr ""

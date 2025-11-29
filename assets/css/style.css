@@ -1,0 +1,224 @@
+/* Frontend Styles for WooCommerce Invoice Manager */
+
+.woocommerce-invoices {
+  margin: 20px 0;
+}
+
+.woocommerce-invoices h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.invoices-table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.my_account_invoices {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.my_account_invoices thead {
+  background: #f8f9fa;
+}
+
+.my_account_invoices th {
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.my_account_invoices td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #e1e1e1;
+  vertical-align: top;
+}
+
+.my_account_invoices tr:hover {
+  background: #f8f9fa;
+}
+
+.my_account_invoices tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status styling */
+.status-sent {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.status-pending {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+/* Order total styling */
+.order-total {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Button styling */
+.button.view {
+  background: #007cba;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button.view:hover {
+  background: #005a87;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .my_account_invoices {
+    font-size: 14px;
+  }
+
+  .my_account_invoices th,
+  .my_account_invoices td {
+    padding: 10px 8px;
+  }
+
+  .my_account_invoices .nobr {
+    white-space: nowrap;
+  }
+
+  /* Hide some columns on mobile */
+  .my_account_invoices .invoice-upload-date {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .my_account_invoices {
+    font-size: 12px;
+  }
+
+  .my_account_invoices th,
+  .my_account_invoices td {
+    padding: 8px 6px;
+  }
+
+  /* Further hide columns on very small screens */
+  .my_account_invoices .invoice-status {
+    display: none;
+  }
+
+  .button.view {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Empty state styling */
+.woocommerce-invoices p {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px dashed #ddd;
+}
+
+/* Loading state */
+.invoice-loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.invoice-loading::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #007cba;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success/Error messages */
+.invoice-message {
+  padding: 12px 16px;
+  margin: 15px 0;
+  border-radius: 4px;
+  border-left: 4px solid;
+}
+
+.invoice-message.success {
+  background: #d7eddb;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.invoice-message.error {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.invoice-message.warning {
+  background: #fff3cd;
+  border-color: #ffc107;
+  color: #856404;
+}
+
+.invoice-message.info {
+  background: #d1ecf1;
+  border-color: #17a2b8;
+  color: #0c5460;
+}
+
+/* Link styling */
+.my_account_invoices a {
+  color: #007cba;
+  text-decoration: none;
+}
+
+.my_account_invoices a:hover {
+  color: #005a87;
+  text-decoration: underline;
+}
+
+/* Status icons */
+.status-sent::before {
+  content: "✓";
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.status-pending::before {
+  content: "⏳";
+  margin-right: 5px;
+}
