@@ -262,45 +262,6 @@ To add a new language:
 3. Save as `wc-invoice-manager-{locale}.po` and `.mo`
 4. Place in `languages/` directory
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Coding Standards
-
-- Follow WordPress Coding Standards
-- Comment your code
-- Test thoroughly before submitting
-- Update documentation as needed
-
-## 📝 Changelog
-
-### Version 1.0.0 (2024-01-15)
-- 🎉 Initial release
-- ✨ PDF upload functionality
-- ✨ Email delivery system
-- ✨ Customer invoice portal
-- ✨ Admin management interface
-- ✨ Invoice tracking system
-- ✨ Greek language support
-
-## 🗺️ Roadmap
-
-- [ ] Automatic invoice generation
-- [ ] Bulk invoice sending
-- [ ] Invoice templates
-- [ ] Multiple file formats support
-- [ ] Invoice numbering system
-- [ ] Advanced reporting
-- [ ] REST API endpoints
-- [ ] Webhooks integration
-
 ## 📄 License
 
 This plugin is licensed under the GPL v2 or later.
@@ -322,7 +283,7 @@ GNU General Public License for more details.
 
 ## 👥 Credits
 
-Developed by [KUBIK](https://kubik.gr)
+Developed by [KUBIK](https://kubik.gr) and [Dimitris Nimas](https://dimitrisnimas.gr)
 
 ### Third-Party Libraries
 
@@ -330,36 +291,6 @@ Developed by [KUBIK](https://kubik.gr)
 - WooCommerce
 - jQuery
 
-## 📞 Support
-
-- **Documentation**: [Link to docs]
-- **Issues**: [GitHub Issues](https://github.com/yourusername/woocommerce-invoice-manager/issues)
-- **Email**: support@kubik.gr
-- **Website**: https://kubik.gr
-
-## ⭐ Show Your Support
-
-If you find this plugin helpful, please:
-- ⭐ Star this repository
-- 🐛 Report bugs
-- 💡 Suggest new features
-- 📢 Share with others
-- ☕ [Buy us a coffee](https://www.buymeacoffee.com/kubik)
-
-## 📸 Screenshots
-
-### Admin Upload Interface
-![Admin Interface](screenshots/admin-upload.png)
-
-### Invoice List
-![Invoice List](screenshots/invoice-list.png)
-
-### Customer Portal
-![Customer Portal](screenshots/customer-portal.png)
-
-### Email Template
-![Email Template](screenshots/email-template.png)
-
 ---
 
-Made with ❤️ by [KUBIK](https://kubik.gr)
+Made with ❤️ by [KUBIK](https://kubik.gr )and [Dimitris Nimas](https://dimitrisnimas.gr)
