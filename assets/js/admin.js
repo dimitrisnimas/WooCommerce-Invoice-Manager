@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
   // Debug button click handler
   $("#debug-upload").on("click", function () {
     $.ajax({
-      url: ajaxurl,
+      url: wcInvoiceManager.ajaxurl,
       type: "POST",
       data: {
         action: "debug_upload",
@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
     console.log("Form data prepared:", formData);
 
     $.ajax({
-      url: ajaxurl,
+      url: wcInvoiceManager.ajaxurl,
       type: "POST",
       data: formData,
       processData: false,
@@ -158,12 +158,12 @@ jQuery(document).ready(function ($) {
     }
 
     $.ajax({
-      url: ajaxurl,
+      url: wcInvoiceManager.ajaxurl,
       type: "POST",
       data: {
         action: "send_invoice",
         invoice_id: invoiceId,
-        send_nonce: '<?php echo wp_create_nonce("send_invoice"); ?>',
+        send_nonce: wcInvoiceManager.sendNonce,
       },
       beforeSend: function () {
         button.prop("disabled", true).text("Αποστολή...");
@@ -227,10 +227,15 @@ jQuery(document).ready(function ($) {
       return;
     }
 
-    if (file && file.type !== "application/pdf") {
-      alert("Μόνο αρχεία PDF επιτρέπονται");
-      this.value = "";
-      return;
+    if (file) {
+      var fileName = file.name;
+      var ext = fileName.split('.').pop().toLowerCase();
+
+      if (ext !== "pdf") {
+        alert("Μόνο αρχεία PDF επιτρέπονται");
+        this.value = "";
+        return;
+      }
     }
   });
 
