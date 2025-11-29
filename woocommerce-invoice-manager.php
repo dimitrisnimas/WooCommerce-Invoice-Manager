@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce Invoice Manager
  * Plugin URI: https://kubik.gr
  * Description: A plugin to manage and send PDF invoices to WooCommerce customers. Allows manual PDF upload and automatic email delivery.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: KUBIK
  * Author URI: https://kubik.gr
  * Text Domain: wc-invoice-manager
@@ -30,7 +30,7 @@ if (!in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get
 }
 
 // Define plugin constants
-define('WC_INVOICE_MANAGER_VERSION', '1.0.0');
+define('WC_INVOICE_MANAGER_VERSION', '1.0.1');
 define('WC_INVOICE_MANAGER_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WC_INVOICE_MANAGER_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('WC_INVOICE_MANAGER_UPLOAD_DIR', WP_CONTENT_DIR . '/uploads/invoices/');
@@ -90,6 +90,11 @@ class WC_Invoice_Manager {
         add_action('admin_menu', array($this, 'add_admin_menu'));
         add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts'));
         add_action('admin_enqueue_scripts', array($this, 'admin_enqueue_scripts'));
+        
+        // Initialize admin class to register AJAX handlers
+        if (is_admin()) {
+            new WC_Invoice_Manager_Admin();
+        }
     }
     
     /**
@@ -199,6 +204,13 @@ class WC_Invoice_Manager {
     public function admin_enqueue_scripts($hook) {
         if (strpos($hook, 'wc-invoice-manager') !== false) {
             wp_enqueue_script('wc-invoice-manager-admin', WC_INVOICE_MANAGER_PLUGIN_URL . 'assets/js/admin.js', array('jquery'), WC_INVOICE_MANAGER_VERSION, true);
+            
+            // Localize script to pass ajaxurl and nonces
+            wp_localize_script('wc-invoice-manager-admin', 'wcInvoiceManager', array(
+                'ajaxurl' => admin_url('admin-ajax.php'),
+                'sendNonce' => wp_create_nonce('send_invoice')
+            ));
+            
             wp_enqueue_style('wc-invoice-manager-admin-style', WC_INVOICE_MANAGER_PLUGIN_URL . 'assets/css/admin.css', array(), WC_INVOICE_MANAGER_VERSION);
         }
     }
