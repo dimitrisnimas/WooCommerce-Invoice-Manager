@@ -153,7 +153,16 @@ class WC_Invoice_Manager_File_Manager {
         }
         
         // Check file type using multiple methods
-        $allowed_types = array('application/pdf');
+        $allowed_types = array(
+            'application/pdf',
+            'application/x-pdf',
+            'application/acrobat',
+            'applications/vnd.pdf',
+            'text/pdf',
+            'text/x-pdf',
+            'application/octet-stream'
+        );
+        
         $file_type = '';
         
         // Method 1: Using mime_content_type
@@ -173,24 +182,6 @@ class WC_Invoice_Manager_File_Manager {
             $file_type = $file['type'];
         }
         
-        // If we can't determine MIME type, just check extension
-        if (empty($file_type)) {
-            $file_extension = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
-            if ($file_extension !== 'pdf') {
-                return array(
-                    'valid' => false,
-                    'message' => __('Το αρχείο πρέπει να έχει επέκταση .pdf', 'wc-invoice-manager')
-                );
-            }
-        } else {
-            if (!in_array($file_type, $allowed_types)) {
-                return array(
-                    'valid' => false,
-                    'message' => sprintf(__('Μόνο αρχεία PDF επιτρέπονται. Δεχόμαστε: %s, Ελήφθη: %s', 'wc-invoice-manager'), implode(', ', $allowed_types), $file_type)
-                );
-            }
-        }
-        
         // Check file extension
         $file_extension = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
         if ($file_extension !== 'pdf') {
@@ -198,6 +189,16 @@ class WC_Invoice_Manager_File_Manager {
                 'valid' => false,
                 'message' => __('Το αρχείο πρέπει να έχει επέκταση .pdf', 'wc-invoice-manager')
             );
+        }
+        
+        // If we can't determine MIME type, rely on extension (already checked above)
+        if (!empty($file_type)) {
+            if (!in_array($file_type, $allowed_types)) {
+                return array(
+                    'valid' => false,
+                    'message' => sprintf(__('Μόνο αρχεία PDF επιτρέπονται. Δεχόμαστε: %s, Ελήφθη: %s', 'wc-invoice-manager'), 'PDF', $file_type)
+                );
+            }
         }
         
         return array('valid' => true);
